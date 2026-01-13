@@ -1,0 +1,124 @@
+# ================= AUDIO (Copyright Safety) =================
+temp/
+temp/**/*.mp3
+temp/**/*.wav
+temp/**/*.m4a
+temp/**/*.webm
+temp/**/*.webm
+
+audio/
+audio/**/*.mp3
+audio/**/*.wav
+audio/**/*.m4a
+
+shorts_exports/
+shorts_exports/*.mp3
+shorts_exports/*.wav
+
+# Keep structure markers
+!audio/developer_focus/.gitkeep
+!audio/office_calm/.gitkeep
+!audio/alone_time/.gitkeep
+!audio/satisfying_trends/.gitkeep
+!shorts_exports/.gitkeep
+!audio/**/.gitkeep
+
+# ================= GENERATED DATA =================
+hash_index.json
+niche_index.json
+clips_index.json
+master_index.json
+*_cache.npy
+*.npy
+
+# Playlist & report outputs (keep samples only)
+playlists/
+playlists/*.json
+!playlists/sample_*.json
+
+reports/
+reports/*.md
+!reports/sample_*.md
+
+# ================= LOGS (Noisy/Temp) =================
+logs/
+logs/**/*.log
+
+# ================= PYTHON ARTIFACTS =================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.env
+.venv/
+venv/
+env/
+*.manifest
+*.spec
+.ipynb_checkpoints/
+.mypy_cache/
+
+# ================= OS =================
+# Windows
+Thumbs.db
+*.lnk
+[Dd]esktop.ini
+
+# macOS
+.DS_Store
+._*
+
+# Linux
+*~
+
+# ================= IDE =================
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+
+# ================= PROJECT SPECIFIC =================
+input/songs.txt
+!input/songs_example.txt
+
+.yt-dlp-cache/
+*.part
+tmp/
+cache/
+test_outputs/
+test_data/
+videos/*.mp4
+
+*.mp3
+
+
+portfolio_proof/
+portfolio_proof/*.png
+portfolio_proof/*.jpg
+!portfolio_proof/sample_*.png
+!portfolio_proof/sample_*.jpg
+
+# ================= WHAT SHOULD BE COMMITTED =================
+# Allow only actual source code files
+*.py
+!temp/**/*.py
+!audio/**/*.py
+!playlists/**/*.py
+!reports/**/*.py
+!logs/**/*.py
+!portfolio_proof/**/*.py
+
+requirements.txt
+setup.sh
+config.py
+docs/
+docs/*.md
+QUICKSTART.md
+PROJECT_SUMMARY.md
+FILE_INVENTORY.md
+
+temp/**/*.mp3
+audio/**/*.mp3
+shorts_exports/*.mp3
+videos/*.mp4
